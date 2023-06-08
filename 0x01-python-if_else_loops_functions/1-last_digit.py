@@ -1,14 +1,23 @@
 #!/usr/bin/python3
 import random
 
+bool isNegative = false
+
 number = random.randint(-10000, 10000)
 
-print(f"Last digit of {number} is",  end = ' ')
+print(f"Last digit of {number} is",  end=' ')
 
-while (number > 10 or number < -10):
+if number < 0:
+    number = abs(number)
+    isNegative = true
+
+while (number >= 10):
     number = number % 10
 
-print(f"{number} and is", end = ' ')
+if isNegative == true:
+    number = -number
+
+print(f"{number} and is", end=' ')
 
 
 if number > 5:
