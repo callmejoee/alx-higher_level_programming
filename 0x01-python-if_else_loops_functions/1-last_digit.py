@@ -5,7 +5,7 @@ number = random.randint(-10000, 10000)
 
 print(f"Last digit of {number} is",  end = ' ')
 
-while (number > 10):
+while (number > 10 or number < -10):
     number = number % 10
 
 print(f"{number} and is", end = ' ')
