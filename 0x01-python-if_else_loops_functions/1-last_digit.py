@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import random
 
-isNegative = false
+isNegative = False
 
 number = random.randint(-10000, 10000)
 
@@ -9,12 +9,12 @@ print(f"Last digit of {number} is",  end=' ')
 
 if number < 0:
     number = abs(number)
-    isNegative = true
+    isNegative = True
 
 while (number >= 10):
     number = number % 10
 
-if isNegative == true:
+if isNegative == True:
     number = -number
 
 print(f"{number} and is", end=' ')
