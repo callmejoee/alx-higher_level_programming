@@ -14,7 +14,7 @@ if number < 0:
 while (number >= 10):
     number = number % 10
 
-if isNegative is  True:
+if isNegative is True:
     number = -number
 
 print(f"{number} and is", end=' ')
