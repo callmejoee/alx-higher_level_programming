@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import random
 
-bool isNegative = false
+isNegative = false
 
 number = random.randint(-10000, 10000)
 
