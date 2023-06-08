@@ -14,7 +14,7 @@ if number < 0:
 while (number >= 10):
     number = number % 10
 
-if isNegative == True:
+if isNegative is  True:
     number = -number
 
 print(f"{number} and is", end=' ')
@@ -23,6 +23,6 @@ print(f"{number} and is", end=' ')
 if number > 5:
     print("greater than 5")
 elif number == 0:
-    print("zero")
+    print("0")
 else:
     print("less than 6 and not 0")
