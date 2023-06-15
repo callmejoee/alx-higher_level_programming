@@ -1,6 +1,9 @@
 #!/usr/bin/python3
-def isupper(c):
-    if ord(c) >= 65 and ord(c) <= 90:
-        return True
-    else:
-        return False
+def uppercase(str):
+    result = ""
+    for letter in str:
+        if ord(letter) >= 97 and ord(letter) < 123:
+            result += chr(ord(letter) - 32)
+        else:
+            result += letter
+    return result
