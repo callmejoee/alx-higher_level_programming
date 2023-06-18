@@ -1,13 +1,9 @@
 #include "lists.h"
-
 /**
  * is_palindrome - check if palindrome
- *
  * @head: head of the list
- *
  * Return: 1 if palindrome, 0 if not
  */
-
 int is_palindrome(listint_t **head)
 {
 	int isPalindrome = 1, length = 0, i = 0, *arr, middle = 0;
@@ -25,15 +21,16 @@ int is_palindrome(listint_t **head)
 
 	arr = malloc(length * sizeof(int));
 	if (arr == NULL)
+	{
+		free(arr);
 		return (1);
-
+	}
 	current = *head;
 	for (i = 0; i < length; i++)
 	{
 		arr[i] = current->n;
 		current = current->next;
 	}
-
 	middle = length / 2;
 	if (length % 2 == 1)
 		middle += 1;
@@ -46,7 +43,6 @@ int is_palindrome(listint_t **head)
 			break;
 		}
 	}
-
 	free(arr);
 	return (isPalindrome);
 }
