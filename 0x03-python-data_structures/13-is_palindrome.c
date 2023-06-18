@@ -13,11 +13,12 @@ int is_palindrome(listint_t **head)
 	int isPalindrome = 1;
 	int length = 0;
 	int i = 0;
+	int *arr;
+	listint_t *current;
 
 	if (*head == NULL || (*head)->next == NULL)
 		return (isPalindrome);
 
-	listint_t *current;
 
 	current = *head;
 
@@ -27,7 +28,6 @@ int is_palindrome(listint_t **head)
 		current = (current)->next;
 	}
 
-	int *arr;
 
 	arr = malloc(length * sizeof(int));
 
