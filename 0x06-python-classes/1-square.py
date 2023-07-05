@@ -9,7 +9,6 @@ class Square:
     Attributes: __size (int): size of the square
     """
 
-
     def __init__(self, size):
         """
         function to initalize the string
