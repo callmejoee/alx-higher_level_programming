@@ -56,7 +56,10 @@ class Square:
         """
         function to display the square
         """
-        for i in range(self.size):
-            for j in range(self.size):
-                print("#", end="")
-        print()
+        if self.size > 0:
+            for i in range (self.size):
+                for j in range(self.size):
+                    print("#", end="")
+                print()
+        else:
+            print()
