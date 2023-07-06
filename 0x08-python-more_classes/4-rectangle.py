@@ -81,6 +81,6 @@ class Rectangle:
             if i != self.height - 1 and self.width != 0:
                 rectangle += '\n'
         return rectangle
-    
+
     def __repr__(self):
         return f"Rectangle({self.width}, {self.height})"
