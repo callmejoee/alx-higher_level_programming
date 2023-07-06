@@ -82,7 +82,7 @@ class Rectangle:
     def __str__(self):
         rectangle = ""
         for i in range(self.height):
-            rectangle += print_symbol * self.width
+            rectangle += Rectangle.print_symbol * self.width
             if i != self.height - 1 and self.width != 0:
                 rectangle += '\n'
         return rectangle
