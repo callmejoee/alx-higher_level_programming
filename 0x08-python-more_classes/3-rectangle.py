@@ -64,8 +64,10 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         else:
             self.__width = value
+
     def area(self):
         return self.width * self.height
+
     def perimeter(self):
         if self.width and self.height:
             return 2 * (self.width + self.height)
@@ -76,6 +78,6 @@ class Rectangle:
         rectangle = ""
         for i in range(self.height):
             rectangle += '#' * self.width
-            if i != self.height - 1:
+            if i != self.height - 1 and self.width != 0:
                 rectangle += '\n'
         return rectangle
