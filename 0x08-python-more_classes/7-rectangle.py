@@ -16,7 +16,7 @@ class Rectangle:
     area(): prints the area
     """
     number_of_instances = 0
-    print_symbol = '#'
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """
@@ -82,7 +82,7 @@ class Rectangle:
     def __str__(self):
         rectangle = ""
         for i in range(self.height):
-            rectangle += Rectangle.print_symbol * self.width
+            rectangle += str(self.print_symbol) * self.width
             if i != self.height - 1 and self.width != 0:
                 rectangle += '\n'
         return rectangle
