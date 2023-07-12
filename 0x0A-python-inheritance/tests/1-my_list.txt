@@ -1,0 +1,31 @@
+#!/usr/bin/python3
+"""Test module for MyList class"""
+
+import unittest
+from models.base import MyList
+
+
+class TestMyList(unittest.TestCase):
+    """Tests for MyList class"""
+
+    def test_print_sorted(self):
+        """Test print_sorted method"""
+
+        # Test sorting an empty list
+        my_list = MyList()
+        my_list.print_sorted()
+        self.assertEqual(my_list, [])
+
+        # Test sorting a list with one element
+        my_list = MyList([1])
+        my_list.print_sorted()
+        self.assertEqual(my_list, [1])
+
+        # Test sorting a list with multiple elements
+        my_list = MyList([3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5])
+        my_list.print_sorted()
+        self.assertEqual(my_list, [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9])
+
+
+if __name__ == '__main__':
+    unittest.main()"""
