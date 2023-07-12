@@ -27,10 +27,12 @@ class Rectangle(BaseGeometry):
     def __str__(self):
         return f"[Rectangle] {self.__width}/{self.__height}"
 class Square(Rectangle):
+    """This is a derived class from rectangle """
     def __init__(self, size):
         self.integer_validator("size", size)
         self.__size = size
         super().__init__(size, size)
 
     def area(self):
+        """Overridden function"""
         return self.__size ** 2
