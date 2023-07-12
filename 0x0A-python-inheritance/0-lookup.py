@@ -3,6 +3,8 @@
 """
 This is a module that provides a function to find the method of object
 """
+
+
 def lookup(obj):
     """
     prints all methods and arguments
@@ -10,4 +12,5 @@ def lookup(obj):
     Args: obj (obj): object
     returns: list
     """
+
     return(dir(obj))
