@@ -30,9 +30,9 @@ some tests for floats
     3
     >>> add_integer(2.5, 2.5)
     4
-
-some tests for strings and non int
-    >>> add_integer(1, "hey")
+    >>> add_integer(3.9, 3.9)
+    6
+    >>> add_integer(1, float('nan'))
     Traceback (most recent call last):
     ...
-    TypeError: b must be an integer
+    ValueError: cannot convert float NaN to integer
