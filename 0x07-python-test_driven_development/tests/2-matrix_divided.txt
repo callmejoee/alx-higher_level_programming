@@ -1,0 +1,15 @@
+The ``Matrix module``
+=====================
+
+using ``matrix_divided``
+------------------------
+
+this is the test file for the matrix divided
+	>>> matrix_divided = __import__("2-matrix_divided").matrix_divided
+
+this is a normal test
+	>>> matrix = [[1, 2, 3],[4, 5, 6]]
+	>>> print(matrix_divided(matrix, 3))
+	[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+	>>> print(matrix)
+	[[1, 2, 3], [4, 5, 6]]
