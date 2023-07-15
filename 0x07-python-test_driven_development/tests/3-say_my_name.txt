@@ -20,3 +20,7 @@ this is testing the exceptions
 	Traceback (most recent call last):
 	...
 	TypeError: last_name must be a string
+
+empty test
+	>>> say_my_name("", "")
+	My name is  
