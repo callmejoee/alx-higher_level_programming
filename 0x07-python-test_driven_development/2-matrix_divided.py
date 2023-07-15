@@ -25,8 +25,8 @@ def matrix_divided(matrix, div):
             is the result of dividing the corresponding
             element in the original matrix by div.
         """
-    if not isinstance(matrix, list) and \
-    not all(isinstance(elem, list) for elem in matrix):
+    if not isinstance(matrix, list) \
+            and not all(isinstance(elem, list) for elem in matrix):
         raise TypeError(
                 "matrix must be a matrix (list of lists) of integers/floats")
 
@@ -34,6 +34,13 @@ def matrix_divided(matrix, div):
 
     new_matrix = [[matrix[j][i] for i in range(size)]
                   for j in range(len(matrix))]
+
+    for i in range(len(matrix)):
+        for j in range(len(matrix[i])):
+            if not isinstance(matrix[i][j], (int, float)):
+                raise TypeError(
+                    "matrix must be a matrix \
+                            (list of lists) of integers/floats")
 
     for i in range(len(matrix)):
         if len(matrix[i]) != size:
