@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-import json
 """This is the file"""
+
+
+import json
 
 def load_from_json_file(filename):
     """ This is a function that reads objects FROM a file"""
