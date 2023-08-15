@@ -1,2 +1,2 @@
 -- lists all data bases
-Select name from sys.databases
+SELECT name FROM sys.databases
