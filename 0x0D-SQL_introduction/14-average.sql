@@ -1,2 +1,2 @@
 -- avg function 
-SELECT avg(score) FROM second_table;
+SELECT avg(score) FROM second_table AS average;
