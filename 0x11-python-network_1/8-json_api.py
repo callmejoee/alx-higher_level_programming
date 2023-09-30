@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This script sends a POST request to a specified URL with a letter as a 
+This script sends a POST request to a specified URL with a letter as a
 parameter and displays the response data.
 """
 
