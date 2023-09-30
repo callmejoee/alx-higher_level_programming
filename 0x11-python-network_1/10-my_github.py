@@ -2,20 +2,21 @@
 """ this is to connect to github"""
 
 import requests
+import sys
 
-username = "callmejoee"
-token = "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"
+def get_github_user_id(username, password):
+    url = f"https://api.github.com/user"
+    response = requests.get(url, auth=(username, password))
 
-url = 'https://api.github.com/callmejoee'
+    if response.status_code == 200:
+        user_data = response.json()
+        return user_data["id"]
+    else:
+        return None
 
-headers = {
-    'Authorization': f'Token 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'
-}
+if __name__ == "__main__":
+    username = sys.argv[1]
+    password = sys.argv[2]
 
-response = requests.get(url, headers=headers)
-data = response.json()
-
-if 'id' in data:
-    print("Your GitHub ID is:", data['id'])
-else:
-    print("Failed to retrieve your GitHub ID")
+    user_id = get_github_user_id(username, password)
+    print(user_id)
