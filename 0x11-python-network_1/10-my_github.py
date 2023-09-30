@@ -4,6 +4,7 @@
 import requests
 import sys
 
+
 def get_github_user_id(username, password):
     url = f"https://api.github.com/user"
     response = requests.get(url, auth=(username, password))
@@ -13,6 +14,7 @@ def get_github_user_id(username, password):
         return user_data["id"]
     else:
         return None
+
 
 if __name__ == "__main__":
     username = sys.argv[1]
