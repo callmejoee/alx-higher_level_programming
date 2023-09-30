@@ -25,5 +25,4 @@ if __name__ == "__main__":
     user_id = get_github_user_id(owner, repo)
     if user_id:
         for commit_sha, commit_author in user_id:
-            print(f"- {commit_sha}: {commit_author}")
-
+            print(f"{commit_sha}: {commit_author}")
