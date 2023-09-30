@@ -1,3 +1,8 @@
+#!/usr/bin/python3
+""" this is to connect to github"""
+
+import requests
+
 username = "callmejoee"
 token = "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"
 
